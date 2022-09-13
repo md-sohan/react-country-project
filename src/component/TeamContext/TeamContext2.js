@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import TeamContext3 from "./TeamContext3";
 const TeamContext2 = () =>{
     return(

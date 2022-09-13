@@ -6,7 +6,7 @@ const Search = ({searchHandler})=>{
 
     useEffect(()=>{
         searchHandler(search);
-    },[search]);
+    },[searchHandler,search]);
 
     return(
         <div>

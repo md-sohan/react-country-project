@@ -16,7 +16,7 @@ const CountryApp = () =>{
       let updatecountry = country.filter((con)=>{
             return con.name.common !== name;
        });
-       console.log(updatecountry)
+       
        setcountry(updatecountry);
     }
 
@@ -41,7 +41,7 @@ const CountryApp = () =>{
        let searchname = name.toLowerCase();
       
 
-        if(searchname != ""){
+        if(searchname !== ""){
             let newcountry = country.filter((con)=>{
                 return con.name.common.toLowerCase().startsWith(searchname);
             });
