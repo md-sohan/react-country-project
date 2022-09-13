@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 const form = {name:'',phone:'',address:''}
@@ -7,10 +7,7 @@ const StudentForm = ({CartData,edituser})=>{
 
     const [user,setuser] = useState(form);
 
-    useEffect(()=>{
-        if(edituser != null)  setuser({...user,edituser});
-    },[]);
-
+  
     const onChangeHandeller = (e) =>{
         if(edituser != null){
             setuser({...user,edituser});
